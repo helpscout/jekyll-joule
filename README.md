@@ -1,4 +1,4 @@
-# jekyll-tester ⚡️
+# MrPoole ⚡️
 
 A Jekyll library for Unit Testing
 
