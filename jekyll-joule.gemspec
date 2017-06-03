@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'mrpoole/version'
+require 'jekyll/joule/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "mrpoole"
-  spec.version       = MrPoole::VERSION
+  spec.name          = "jekyll-joule"
+  spec.version       = Jekyll::Joule::VERSION
   spec.authors       = ["ItsJonQ"]
   spec.email         = ["itsjonq@gmail.com"]
 
   spec.summary       = "A Jekyll library for Unit Testing"
-  spec.homepage      = "https://github.com/helpscout/mrpoole"
+  spec.homepage      = "https://github.com/helpscout/jekyll-joule"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|

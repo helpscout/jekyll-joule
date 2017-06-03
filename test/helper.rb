@@ -2,9 +2,9 @@ require 'rubygems'
 require 'minitest/autorun'
 require 'minitest/reporters'
 require 'minitest/profile'
-require 'nokogiri'
 require 'ostruct'
 require 'rspec/mocks'
+require 'jekyll/joule'
 
 require 'jekyll'
 
@@ -31,7 +31,7 @@ class JekyllUnitTest < Minitest::Test
     @site.generate
     @site.render
 
-    @poole = MrPoole::Test.new(@site)
+    @joule = Jekyll::Joule::Site.new(@site)
   end
 
   def mocks_expect(*args)

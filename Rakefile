@@ -7,7 +7,7 @@ require 'yaml'
 require 'rake/testtask'
 
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), *%w[lib]))
-require 'mrpoole/version'
+# require 'jekyll/joule/version'
 
 Rake::TestTask.new(:test) do |test|
   test.libs << 'lib' << 'test'
