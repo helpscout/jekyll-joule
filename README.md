@@ -24,9 +24,38 @@ gem install jekyll-joule
 ```
 
 
+
+## Basic Usage
+
+Below is an example of how you can write a test with Joule.
+
+```rb
+class ExampleTest < JekyllUnitTest
+  should "render a div containing the Page title" do
+    @joule.render(%Q[
+      ---
+      title: "Yiss"
+      ---
+      <div class="aww">
+        {{ page.title }}
+      </div>
+    ])
+
+    el = @joule.find(".aww")
+
+    assert(el)
+    assert(el.text.include?("Yiss"))
+    assert(el["class"].include?("aww"))
+  end
+end
+```
+
+
+
 ## Documentation
 
 **[View the docs](https://github.com/helpscout/jekyll-joule/blob/master/docs/introduction.md)** to get started with Joule!
+
 
 
 ## Examples

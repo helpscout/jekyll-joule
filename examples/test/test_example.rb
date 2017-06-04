@@ -13,11 +13,11 @@ class ExampleTest < JekyllUnitTest
     @joule.render(html)
 
     # 3. Find your HTML element(s)
-    el = @joule.find(".hello")
+    el = @joule.find(".aww")
 
     # 4. Write tests
     assert(el)
-    assert(el.text.include?("Hello"))
-    assert(el["class"].include?("hello"))
+    assert(el.text.include?("Yiss"))
+    assert(el["class"].include?("aww"))
   end
 end
