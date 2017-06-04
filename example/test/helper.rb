@@ -4,8 +4,8 @@ require 'minitest/reporters'
 require 'minitest/profile'
 require 'ostruct'
 require 'rspec/mocks'
-require 'jekyll/joule'
 require 'jekyll'
+require 'jekyll/joule'
 require 'shoulda'
 
 Jekyll.logger = Logger.new(StringIO.new)
