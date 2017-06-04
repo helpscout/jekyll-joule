@@ -6,4 +6,4 @@ So far, Joule has only been tested with [minitest](https://github.com/seattlerb/
 
 There is a _slight_ bit of setup required to get Jekyll setup for testing.
 
-Check out our **[Setup](/setup.md)** documentation to get started!
+Check out our **[Setup](./setup.md)** documentation to get started!
