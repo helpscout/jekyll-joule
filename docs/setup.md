@@ -4,7 +4,8 @@ The are a couple of things you need to do to get started with writing Jekyll tes
 
 The following steps are based on Jekyll's own [test setup](https://github.com/jekyll/jekyll/tree/master/test). However, they've been simplified to make it easier to follow 😘.
 
-Note: You can find all of the setup code in our [examples](https://github.com/helpscout/jekyll-joule/tree/master/example).
+> ## TLDR
+> You can find all of the setup code in our [examples](https://github.com/helpscout/jekyll-joule/tree/master/example).
 
 ## Add test dependencies
 
