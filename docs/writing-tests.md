@@ -3,7 +3,7 @@
 Now that we've [set up](./setup.md) our Jekyll project for testing, let's add our first test file.
 
 > ## TL;DR
-> You can find all of the setup code in our [examples](https://github.com/helpscout/jekyll-joule/tree/master/examples).
+> You can find an example test in our [examples](https://github.com/helpscout/jekyll-joule/tree/master/examples/test).
 
 ## Add your test file
 
@@ -79,4 +79,4 @@ _Aww yiss!_
 
 Joule supports Jekyll plugins, `{% include %}`, Liquid filters, and all the fun things you'd expect from your Jekyll code.
 
-Good luck and have fun testing! 🚀
+Good luck and have fun testing! ✌️😎
