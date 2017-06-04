@@ -107,4 +107,4 @@ To confirm, run the following command:
 
 As long as you don't see a bunch of errors in your Terminal (😱), then you're good!
 
-Next, let's start **[writing some tests!](./writing-tests.md)!
+Next, let's start **[writing some tests!](./writing-tests.md)**!
