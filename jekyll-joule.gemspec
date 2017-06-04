@@ -31,4 +31,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec-mocks"
   spec.add_development_dependency "shoulda"
   spec.add_development_dependency "kramdown"
+  spec.add_development_dependency "jekyll-jolt"
+  spec.add_development_dependency "jekyll-spark"
 end

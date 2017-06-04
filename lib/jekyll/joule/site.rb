@@ -38,7 +38,7 @@ module Jekyll
       end
 
       def find(selector)
-        find_all(selector)[0]
+        find_all(selector).first
       end
     end
   end
