@@ -5,7 +5,7 @@ The are a couple of things you need to do to get started with writing Jekyll tes
 The following steps are based on Jekyll's own [test setup](https://github.com/jekyll/jekyll/tree/master/test). However, they've been simplified to make it easier to follow 😘.
 
 > ## TLDR
-> You can find all of the setup code in our [examples](https://github.com/helpscout/jekyll-joule/tree/master/example).
+> You can find all of the setup code in our [examples](https://github.com/helpscout/jekyll-joule/tree/master/examples).
 
 ## Add test dependencies
 
@@ -98,7 +98,7 @@ my-jekyll/
 └── Rakefile
 ```
 
-There's a **bunch** of stuff you need to add to your `helper.rb`. The easiest thing you can do is copy everything from our [example `helper.rb` file](https://github.com/helpscout/jekyll-joule/blob/master/example/test/helper.rb), and paste it into your `helper.rb` file ✌️.
+There's a **bunch** of stuff you need to add to your `helper.rb`. The easiest thing you can do is copy everything from our [example `helper.rb` file](https://github.com/helpscout/jekyll-joule/blob/master/examples/test/helper.rb), and paste it into your `helper.rb` file ✌️.
 
 That's it! Your Jekyll site is setup for testing 🎉
 
