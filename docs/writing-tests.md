@@ -71,7 +71,7 @@ Finished in 0.05835s
 And that's it! You've written your first Jekyll unit test with Minitest and Joule! 🚀
 
 
-![Aww yiss](https://media.giphy.com/media/S4P8Z5fiLRpOU/giphy.gif)
+![Aww yiss](https://media.giphy.com/media/S4P8Z5fiLRpOU/giphy.gif)<br>
 _Aww yiss!_
 
 
