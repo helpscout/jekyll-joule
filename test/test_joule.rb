@@ -15,6 +15,38 @@ class JouleTest < JekyllUnitTest
     assert(el["class"].include?("hello"))
   end
 
+  class JouleDataTest < JekyllUnitTest
+    should "return a Jekyll::Page instance" do
+      html = %Q[
+        <div class="hello">
+          Hello
+        </div>
+      ]
+      @joule.render(html)
+
+      assert(@joule.data.instance_of?(Jekyll::Joule::Page))
+    end
+
+    should "parse front matter" do
+      html = %Q[
+        ---
+        awesome: "yes"
+        ---
+        <div class="hello">
+          <div class="awesome">
+            {{ page.awesome }}
+          </div>
+          Hello
+        </div>
+      ]
+      @joule.render(html)
+
+      assert(@joule.find(".awesome").text.include?("yes"))
+      assert(@joule.find(".hello").text.include?("yes"))
+      assert(@joule.find(".hello").text.include?("Hello"))
+    end
+  end
+
   class JouleFindTest < JekyllUnitTest
     should "get single node element" do
       html = %Q[

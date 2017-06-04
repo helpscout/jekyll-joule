@@ -1,4 +1,5 @@
 require "jekyll"
+require "jekyll/joule/page"
 require "nokogiri"
 
 module Jekyll
@@ -8,23 +9,36 @@ module Jekyll
 
       def initialize(site)
         @site = site
-        @site.data["joule_data"]
+        @data = false
         @html = ""
         @fixture_id = "joule-fixture"
+        @test_page_name = "test_joule.md"
+
+        return self
+      end
+
+      def get_page
+        @site.pages.find {|p| p.name === @test_page_name}
+      end
+
+      def reset_page
+        @site.pages.delete_if {|p| p.name === @test_page_name}
       end
 
       def generate(page)
-        @data = [page]
+        reset_page
+        @site.pages.push(page)
         @site.render
 
-        return page
+        return get_page
       end
 
       def render(content)
-        page = @site.pages.last
-        page.content = %Q[<div id="#{@fixture_id}">#{content}</div>]
-        generate(page)
-        @html = Nokogiri::HTML(@data.first["content"]).css(%Q[##{@fixture_id}])[0]
+        page = Jekyll::Joule::Page.new(@site, @site.source, "/", @test_page_name)
+        page.reparse(content)
+        page.content = %Q[<div id="#{@fixture_id}">#{page.content}</div>]
+        @data = generate(page)
+        @html = Nokogiri::HTML(@data["content"]).css(%Q[##{@fixture_id}])[0]
 
         return self
       end
