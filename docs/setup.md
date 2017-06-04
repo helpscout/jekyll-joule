@@ -97,7 +97,7 @@ my-jekyll/
 └── Rakefile
 ```
 
-There's a **bunch** of stuff you need to add to your `helper.rb`. The easiest thing you can do is copy everyting from our [example `helper.rb` file](https://github.com/helpscout/jekyll-joule/blob/master/example/test/helper.rb), and paste it into your `helper.rb` file ✌️.
+There's a **bunch** of stuff you need to add to your `helper.rb`. The easiest thing you can do is copy everything from our [example `helper.rb` file](https://github.com/helpscout/jekyll-joule/blob/master/example/test/helper.rb), and paste it into your `helper.rb` file ✌️.
 
 That's it! Your Jekyll site is setup for testing 🎉
 
