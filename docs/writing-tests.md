@@ -79,4 +79,4 @@ _Aww yiss!_
 
 Joule supports Jekyll plugins, `{% include %}`, Liquid filters, and all the fun things you'd expect from your Jekyll code.
 
-Good luck and have fun testing! 🚀
+Good luck and have fun testing! ✌️😎
