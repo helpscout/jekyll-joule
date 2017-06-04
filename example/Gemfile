@@ -1,0 +1,11 @@
+source 'https://rubygems.org'
+
+group :test do
+  gem "minitest", "~> 5.8"
+  gem "minitest-profile"
+  gem "minitest-reporters"
+  gem "rake", "~> 10.0"
+  gem "rspec-mocks"
+  gem "shoulda"
+  gem "jekyll-joule"
+end
