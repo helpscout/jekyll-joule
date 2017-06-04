@@ -1,5 +1,4 @@
 require "jekyll"
-require "set"
 
 module Jekyll
   module Joule
