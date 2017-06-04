@@ -1,6 +1,8 @@
 # Joule 🔸 [![Build Status](https://travis-ci.org/helpscout/jekyll-joule.svg?branch=master)](https://travis-ci.org/helpscout/jekyll-joule)
 
-A Jekyll library for Unit Testing
+Joule is a Jekyll utility helper designed to make it (way) easier to write unit tests.
+
+So far, Joule has only been tested with [minitest](https://github.com/seattlerb/minitest). However, you **should** be able to use it with other testing frameworks.
 
 
 ## Install
