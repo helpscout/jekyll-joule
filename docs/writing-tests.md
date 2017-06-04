@@ -2,6 +2,8 @@
 
 Now that we've [set up](./setup.md) our Jekyll project for testing, let's add our first test file.
 
+> ## TL;DR
+> You can find all of the setup code in our [examples](https://github.com/helpscout/jekyll-joule/tree/master/examples).
 
 ## Add your test file
 
