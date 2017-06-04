@@ -24,9 +24,9 @@ gem install jekyll-joule
 
 ## Documentation
 
-**[View the docs](https://github.com/helpscout/jekyll-joule/blob/master/docs/introduction.md)** to get started with Jekyll Components!
+**[View the docs](https://github.com/helpscout/jekyll-joule/blob/master/docs/introduction.md)** to get started with Joule!
 
 
 ## Examples
 
-**[View the starter](https://github.com/helpscout/jekyll-joule/tree/master/examples)** Component view files.
+**[View the example](https://github.com/helpscout/jekyll-joule/tree/master/examples)** Jekyll setup + Joule test files.
