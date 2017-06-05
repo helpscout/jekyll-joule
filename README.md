@@ -1,4 +1,4 @@
-# Joule 🔸 [![Build Status](https://travis-ci.org/helpscout/jekyll-joule.svg?branch=master)](https://travis-ci.org/helpscout/jekyll-joule) [![Gem Version](https://badge.fury.io/rb/jekyll-joule.svg)](https://badge.fury.io/rb/jekyll-joule)
+# Joule 🔸 [![Build Status](https://travis-ci.org/helpscout/jekyll-joule.svg?branch=master)](https://travis-ci.org/helpscout/jekyll-joule) [![Gem Version](https://badge.fury.io/rb/jekyll-joule.svg)](https://badge.fury.io/rb/jekyll-joule) [![Coverage Status](https://coveralls.io/repos/github/helpscout/jekyll-joule/badge.svg?branch=master)](https://coveralls.io/github/helpscout/jekyll-joule?branch=master)
 
 Joule is a Jekyll utility helper designed to make it (way) easier to write unit tests.
 
