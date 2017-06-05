@@ -50,6 +50,8 @@ class ExampleTest < JekyllUnitTest
 end
 ```
 
+Check out the full [rendering API documentation](./docs/rendering.md)
+
 
 
 ## Documentation
