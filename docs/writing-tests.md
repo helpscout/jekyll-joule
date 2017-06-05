@@ -84,4 +84,4 @@ Good luck and have fun testing! ✌️😎
 
 ## Need more?
 
-To learn more about how you can use Joule, check out our [rendering docs](./rendering.md).
+To learn more about how you can use Joule, check out our **[rendering docs](./rendering.md)**.
