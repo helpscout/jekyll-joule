@@ -36,9 +36,8 @@ module Jekyll
       def render(content)
         page = Jekyll::Joule::Page.new(@site, @site.source, "/", @test_page_name)
         page.reparse(content)
-        page.content = %Q[<div id="#{@fixture_id}">#{page.content}</div>]
         @data = generate(page)
-        @html = Nokogiri::HTML(@data["content"]).css(%Q[##{@fixture_id}])[0]
+        @html = Nokogiri::HTML(@data.content)
 
         return self
       end

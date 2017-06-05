@@ -15,6 +15,76 @@ class JouleTest < JekyllUnitTest
     assert(el["class"].include?("hello"))
   end
 
+  should "render non-block HTML tags" do
+    html = %Q[
+      <span class="hello">
+        Hello
+      </span>
+      <span class="there">
+        There
+      </span>
+    ]
+    @joule.render(html)
+    h = @joule.css(".hello")[0]
+    t = @joule.css(".there")[0]
+
+    assert(h.text.include?("Hello"))
+    assert(t.text.include?("There"))
+  end
+
+  should "render markdown" do
+    html = %Q[
+      # Hi
+
+      This is a paragraph.
+
+      ## Second Wave
+
+      Neat! There's a [link](#linky) maybe.
+    ]
+    @joule.render(html)
+
+    assert(@joule.find("h1").text.include?("Hi"))
+    assert(@joule.find_all("p").first.text.include?("This is a paragraph"))
+    assert(@joule.find("h2").text.include?("Second Wave"))
+    assert(@joule.find("a").text.include?("link"))
+  end
+
+  should "render markdown and HTML" do
+    html = %Q[
+      # Hi
+
+      This is a paragraph.
+
+      <div class="html">
+        This is HTML
+      </div>
+    ]
+    @joule.render(html)
+
+    assert(@joule.find("h1").text.include?("Hi"))
+    assert(@joule.find_all("p").first.text.include?("This is a paragraph"))
+    assert(@joule.find(".html").text.include?("This is HTML"))
+  end
+
+  should "render markdown and HTML and Liquid" do
+    html = %Q[
+      # Hi
+
+      {% assign liquid = "THIS IS LIQUID" %}
+      {{ liquid | downcase }}
+
+      <div class="html">
+        This is HTML
+      </div>
+    ]
+    @joule.render(html)
+
+    assert(@joule.find("h1").text.include?("Hi"))
+    assert(@joule.find("p").text.include?("this is liquid"))
+    assert(@joule.find(".html").text.include?("This is HTML"))
+  end
+
   class JouleDataTest < JekyllUnitTest
     should "return a Jekyll::Page instance" do
       html = %Q[
