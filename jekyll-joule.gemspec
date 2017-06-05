@@ -28,9 +28,12 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "minitest-reporters"
   spec.add_development_dependency "minitest-profile"
   spec.add_development_dependency "minitest", "~> 5.8"
+  spec.add_development_dependency "coveralls"
+  spec.add_development_dependency "kramdown"
   spec.add_development_dependency "rspec-mocks"
   spec.add_development_dependency "shoulda"
-  spec.add_development_dependency "kramdown"
+  spec.add_development_dependency "simplecov"
   spec.add_development_dependency "jekyll-jolt"
   spec.add_development_dependency "jekyll-spark"
+
 end

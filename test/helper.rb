@@ -1,12 +1,21 @@
-require 'rubygems'
-require 'minitest/autorun'
-require 'minitest/reporters'
-require 'minitest/profile'
-require 'ostruct'
-require 'rspec/mocks'
-require 'jekyll/joule'
-require 'jekyll'
-require 'shoulda'
+require "simplecov"
+require "coveralls"
+
+SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
+  SimpleCov::Formatter::HTMLFormatter,
+  Coveralls::SimpleCov::Formatter
+]
+SimpleCov.start
+
+require "rubygems"
+require "minitest/autorun"
+require "minitest/reporters"
+require "minitest/profile"
+require "ostruct"
+require "rspec/mocks"
+require "jekyll/joule"
+require "jekyll"
+require "shoulda"
 
 Jekyll.logger = Logger.new(StringIO.new)
 
