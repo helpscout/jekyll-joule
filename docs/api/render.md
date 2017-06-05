@@ -21,8 +21,6 @@ The easiest way to pass an HTML string into `@Joule` is to use Ruby's [`%Q strin
 
 Joule's render method accepts anything you'd expect Jekyll to be able to render. That includes HTML and Liquid tags, blocks, and filters (like `{% include %}`).
 
-Note: At the moment, markdown **isn't** supported 😔.
-
 ```rb
 html = %Q[
   <div class="pikachu">
@@ -33,4 +31,22 @@ html = %Q[
 ]
 
 @joule.render(html)
+```
+
+
+### Markdown
+
+Joule's `,render()` method accepts markdown as well!
+
+```rb
+markdown = %Q[
+  # Pikachu
+  {% include card/header/thunderbolt.html %}
+
+  > Pika-pi
+
+  {% include card/footer.html %}
+]
+
+@joule.render(markdown)
 ```
