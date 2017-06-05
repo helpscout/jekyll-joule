@@ -11,7 +11,7 @@
 
 | Type | Description |
 | --- | --- |
-| array | An array of [Nokogiri](https://github.com/sparklemotion/nokogiri) element instances. |
+| array | An array of [Oga](https://github.com/YorickPeterse/oga) element instances. |
 
 
 ## Usage
@@ -31,7 +31,7 @@ html = %Q[
 els = @joule.find_all(".spark")
 ```
 
-In the above example, the variable `els` would be an Array of 4 Nokogiri elements for:
+In the above example, the variable `els` would be an Array of 4 elements for:
 
 ```html
 <div class="spark">...</div>

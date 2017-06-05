@@ -1,3 +1,3 @@
 require "jekyll/joule/version"
 require "jekyll/joule/site"
-require "jekyll/extensions/nokogiri_element"
+require "jekyll/extensions/oga_element"

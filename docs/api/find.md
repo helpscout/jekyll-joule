@@ -11,7 +11,7 @@
 
 | Type | Description |
 | --- | --- |
-| instance | A [Nokogiri](https://github.com/sparklemotion/nokogiri) element instance. |
+| instance | A [Oga](https://github.com/YorickPeterse/oga) element instance. |
 
 
 ## Usage
@@ -30,7 +30,7 @@ html = %Q[
 el = @joule.find("blockquote")
 ```
 
-In the above example, the variable `el` would be a Nokogiri element for:
+In the above example, the variable `el` would be an element for:
 
 ```html
 <blockquote class="quote">Pika-pi</blockquote>
@@ -45,7 +45,7 @@ el["class"]   # quote
 
 ### Chaining
 
-Joule has enhanced Nokogiri's Element class by allowing you to find elements within elements.
+Joule has enhanced Oga's `XML::Element` class by allowing you to find elements within elements.
 
 In the example below, we're able to find the inner `.pika` selector within the outer `.pikachu` selector.
 ```rb

@@ -1,7 +1,7 @@
 require "helper"
 
-class JouleNokogiriExtTest < JekyllUnitTest
-  should "extend Nokigiri's Element class with find method" do
+class JouleOgaExtTest < JekyllUnitTest
+  should "extend Oga's Element class with find method" do
     html = %Q[
       <div class="hello">
         <h1>Yes</h1>
@@ -19,7 +19,7 @@ class JouleNokogiriExtTest < JekyllUnitTest
     assert(h2.text.include?("No"))
   end
 
-  should "extend Nokigiri's Element class with find_all method" do
+  should "extend Oga's Element class with find_all method" do
     html = %Q[
       <div class="hello">
         <h2>Yes</h2>
@@ -35,6 +35,19 @@ class JouleNokogiriExtTest < JekyllUnitTest
 
     assert_equal(h2.length, 3)
     assert(h2.first.text.include?("Yes"))
+  end
+
+  should "extend Oga's Element class with prop method" do
+    html = %Q[
+      <div class="hello" style="display: block;">
+        <h2>Yes</h2>
+      </div>
+    ]
+    @joule.render(html)
+    el = @joule.find(".hello")
+
+    assert_equal(el.prop("class"), "hello")
+    assert(el.prop("style").include?("display: block"))
   end
 
   class JouleFindTest < JekyllUnitTest
