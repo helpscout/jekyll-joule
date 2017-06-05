@@ -13,6 +13,7 @@ Joule comes with a handful of methods to help you render and find HTML selectors
 * [.render()](./api/render.md)
 * [.find()](./api/find.md)
 * [.find_all()](./api/find_all.md)
+* [.prop()](./api/prop.md)
 
 
 
