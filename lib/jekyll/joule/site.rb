@@ -1,6 +1,6 @@
 require "jekyll"
 require "jekyll/joule/page"
-require "oga"
+require "nokogiri"
 
 module Jekyll
   module Joule
@@ -37,7 +37,7 @@ module Jekyll
         page = Jekyll::Joule::Page.new(@site, @site.source, "/", @test_page_name)
         page.reparse(content)
         @data = generate(page)
-        @html = Oga.parse_html(@data.content)
+        @html = Nokogiri::HTML(@data.content)
 
         return self
       end

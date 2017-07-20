@@ -11,7 +11,7 @@
 
 | Type | Description |
 | --- | --- |
-| instance | A [Oga](https://github.com/YorickPeterse/oga) element instance. |
+| instance | A [Nokogiri](https://github.com/sparklemotion/nokogiri) element instance. |
 
 
 ## Usage
@@ -45,7 +45,7 @@ el["class"]   # quote
 
 ### Chaining
 
-Joule has enhanced Oga's `XML::Element` class by allowing you to find elements within elements.
+Joule has enhanced Nokogiri's `XML::Element` class by allowing you to find elements within elements.
 
 In the example below, we're able to find the inner `.pika` selector within the outer `.pikachu` selector.
 ```rb
