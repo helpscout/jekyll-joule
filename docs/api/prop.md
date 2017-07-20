@@ -8,7 +8,7 @@
 
 #### Aliases
 
-**[.get()](http://code.yorickpeterse.com/oga/latest/Oga/XML/Element.html#get-instance_method)**
+**[.attr()](http://www.rubydoc.info/github/sparklemotion/nokogiri/Nokogiri/XML/Attr)**
 
 
 #### Returns

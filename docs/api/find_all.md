@@ -11,7 +11,7 @@
 
 | Type | Description |
 | --- | --- |
-| array | An array of [Oga](https://github.com/YorickPeterse/oga) element instances. |
+| array | An array of [Nokogiri](https://github.com/sparklemotion/nokogiri) element instances. |
 
 
 ## Usage

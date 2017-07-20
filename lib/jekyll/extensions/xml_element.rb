@@ -1,4 +1,4 @@
-module Oga
+module Nokogiri
   module XML
     class Element
       def find_all *args
@@ -10,7 +10,7 @@ module Oga
       end
 
       def prop *args
-        self.get *args
+        self.attr *args
       end
     end
   end
